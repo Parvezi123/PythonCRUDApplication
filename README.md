@@ -1,5 +1,5 @@
-# PythonCRUDApplication
-
+# Python CRUD Application
+## Sample Movie Example
 1.  Install virtualenv to install virtual Environment to manage depencies according
 2.      pip install virtualenv
 3.      virtualenv sample_env
