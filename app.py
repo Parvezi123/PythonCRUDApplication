@@ -38,6 +38,15 @@ def remove_movie(id):
     response = Response("Movie Deleted", status=200, mimetype='application/json')
     return response
 
+# Dummy method to display
+@app.route('/', methods=['GET'])
+def displayMessage():
+    return "<h1><br> <br> <br> <br> <br> <br> <br> <center>  S  H  I  T &nbsp; &nbsp; &nbsp;  API  -  Not at root level ... </centre> </h1>"
+
+# Dummy method to display
+@app.route('/1', methods=['GET'])
+def displayMessage1():
+    return "<h1><br> <br> <br> <br> <br> <br> <br> <center>  <big><big>S</big></big><small>orry</small>  <big><big>H</big></big><small>it</small>  <big><big>I</big></big><small>n</small>  <big><big>T</big></big><small>he</small> &nbsp; &nbsp; &nbsp;  API  -  Not at root level ... </centre> </h1>"
 
 if __name__ == "__main__":
     app.run(port=1234, debug=True)
